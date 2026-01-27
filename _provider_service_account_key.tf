@@ -1,0 +1,32 @@
+
+# provider "vault" {
+#   address = var.vault_address
+# }
+
+# # 如果使用 Service Account Key 金鑰方式驗證 
+# data "vault_generic_secret" "sa_gcp_key" {
+#   path = "gcp/key/${var.sa_name}"
+# }
+
+# provider "google" {
+#   project     = jsondecode(file("../keys/root_sa.json")).project_id
+#   region      = var.region
+
+#   credentials = base64decode(data.vault_generic_secret.sa_gcp_key.data["private_key_data"])
+# }
+
+# terraform {
+#   required_version = "~> 1.14.0"
+
+#   required_providers {
+#     google = {
+#       source  = "hashicorp/google"
+#       version = "~> 6.15.0" 
+#     }
+
+#     vault = {
+#       source  = "hashicorp/vault"
+#       version = "~> 4.6.0"
+#     }
+#   }
+# }
