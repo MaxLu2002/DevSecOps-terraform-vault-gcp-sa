@@ -13,5 +13,5 @@ resource "google_compute_firewall" "allow_admin_access" {
     ports    = ["0-65535"]
   }
 
-  source_ranges = ["35.235.240.0/20"]
+  source_ranges = ["0.0.0.0/0"]
 }

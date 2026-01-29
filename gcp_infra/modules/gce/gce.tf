@@ -2,6 +2,10 @@ resource "google_compute_instance" "public_vm" {
   name         = "${var.labels["builder"]}-${var.gce_type}-${var.gce_name}"
   machine_type = "e2-micro"
   zone         = "${var.gce_region}-${var.gce_zone}"
+  
+  metadata = {
+    enable-oslogin = "FALSE" 
+  }
 
   boot_disk {
     initialize_params {

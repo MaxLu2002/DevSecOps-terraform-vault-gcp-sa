@@ -6,7 +6,6 @@
 
 ## 📚 參考資源
 
-- [GCP 官方實驗室教學](https://partner.skills.google/focuses/13349?catalog_rank=%7B%22rank%22%3A5%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=67948347)
 - [利用 Vault 部署 GCP Service Account(影片)](https://www.youtube.com/watch?v=tvgTGJjRNA8)
 - [Vault + GCP + Terraform 整合操作(影片)](https://www.youtube.com/watch?v=mxlNw9rZYcM)
 

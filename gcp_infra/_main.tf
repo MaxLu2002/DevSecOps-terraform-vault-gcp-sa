@@ -16,7 +16,7 @@ module vpc {
 }
 
 module firewall {
-  source = "./modules/firewall_allow_myip_only"
+  source = "./modules/firewall_allow_all"
   labels = var.labels
   depends_on = [ module.vpc ]
 
