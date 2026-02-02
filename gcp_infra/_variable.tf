@@ -9,6 +9,10 @@ variable "sa_name" {
   default = "default-gcp-sa-by-vault"
 }
 
+variable "project_id" {
+  type = string
+}
+
 # ----------------- Common Variables ---------------- #
 variable "region" {
   type = string
@@ -28,7 +32,7 @@ variable "vpc_cidr" {
   description = "CIDR block for VPC"
 }
 
-# ----------------- GCS Variables ---------------- #
+# ----------------- GCE Variables ---------------- #
 variable "random_id_byte_length" {
   type = number
   default = 4
@@ -56,4 +60,9 @@ variable "gce_machine_type" {
 
 variable "gce_zone" {
   type    = string
+}
+
+variable "os_login" {
+  type    = bool
+  default = false
 }

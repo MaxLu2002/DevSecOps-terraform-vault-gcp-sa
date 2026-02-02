@@ -8,6 +8,6 @@ resource "google_compute_firewall" "allow_admin_access" {
   }
 
   source_ranges = [
-    "${chomp(data.http.myip.response_body)}/32","35.235.240.0/20"              
+    "${chomp(data.http.myip.response_body)}/32"                    
   ]
 }

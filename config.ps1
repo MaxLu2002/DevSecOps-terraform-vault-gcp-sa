@@ -6,4 +6,4 @@ $env:TF_VAR_sa_name="{YOUR-SA-NAME}"
 
 $env:secret_type =  ""  # access_token or service_account_key
 
-$env:PROJECT_ID = (Get-Content "./keys/root_sa.json" | ConvertFrom-Json).project_id
+$env:PROJECT_ID = "{YOUR-PROJECT-ID}"

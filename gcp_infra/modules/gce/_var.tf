@@ -29,3 +29,7 @@ variable "gce_machine_type" {
 variable "gce_subnet" {
   type = string
 }
+
+variable "os_login" {
+  type = bool
+}

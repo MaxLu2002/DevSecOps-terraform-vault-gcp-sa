@@ -9,7 +9,7 @@ data "vault_generic_secret" "sa_gcp_key" {
 }
 
 provider "google" {
-  project     = jsondecode(file("../keys/root_sa.json")).project_id
+  project     = var.project_id
   region      = var.region
 
   access_token = data.vault_generic_secret.sa_gcp_key.data["token"]

@@ -4,7 +4,7 @@ resource "google_compute_instance" "public_vm" {
   zone         = "${var.gce_region}-${var.gce_zone}"
   
   metadata = {
-    enable-oslogin = "FALSE" 
+    enable-oslogin = var.os_login
   }
 
   boot_disk {
